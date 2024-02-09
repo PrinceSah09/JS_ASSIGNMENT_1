@@ -1,0 +1,82 @@
+/* Apply Arial font and a light gray background to the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Center the form horizontally, give it padding, a white background, rounded corners, and a shadow */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px black;
+}
+
+/* Flex layout for aligning elements horizontally and wrapping to the next row if necessary */
+.align {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* Styles for labels: display as block, bold font, and margin at the bottom */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Flex layout for input elements: space between them */
+.input {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styling for input fields (number, select, text): full width, padding, margin, border, and border radius */
+input[type="number"],
+select,
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Margin for the operator element */
+.operator {
+    margin: 0 10px 0;
+}
+
+/* Flex layout for buttons: space between them */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Button styles: width, background color, text color, padding, border, border radius, and cursor */
+button {
+    width: 48%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hover effect for buttons: darker background color */
+button:hover {
+    background: rgb(26, 0, 0);
+}
+
+/* Styling for the result display: padding, background color, border, border radius, and box sizing */
+#result {
+    padding: 10px;
+    background-color: #eee;
+    border: 1px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

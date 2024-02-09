@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the webpage -->
+    <title>Calculator Web Application</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Calculator form -->
+    <form id="calculatorForm">
+      <!-- Input fields for numbers and operator -->
+      <div class="input">
+        <input type="number" id="num1" required placeholder="Number 1" />
+        <!-- Dropdown for selecting the operator -->
+        <div class="align operator">
+          <label for="operator">Operator</label><br />
+          <select id="operator" class="operator-select">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+          </select>
+        </div>
+        <input type="number" id="num2" required placeholder="Number 2" />
+      </div>
+
+      <!-- Button container for calculation and clearing -->
+      <div class="button-container">
+        <button type="button" id="calculateButton">Answer</button>
+        <button type="button" id="clearButton">Clear</button>
+      </div>
+      <br />
+
+      <!-- Result display -->
+      <label for="result">Result:</label>
+      <input type="text" id="result" readonly />
+    </form>
+
+    <!-- JavaScript file for calculator functionality -->
+    <script src="script.js"></script>
+  </body>
+</html>
