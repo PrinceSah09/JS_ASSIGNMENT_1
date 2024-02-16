@@ -2,8 +2,17 @@
 add = (num1, num2) => num1 + num2;
 subtract = (num1, num2) => num1 - num2;
 multiply = (num1, num2) => num1 * num2;
-percentage = (num1, num2) => (num1 / num2) * 100;
 const divide = (num1, num2) => (num2 === 0 ? "Cannot divide by zero" : num1 / num2);
+
+// percentage = (num1, num2) => (num1 / num2) * 100;
+
+percentage = (num1, num2) => {
+    if (num2 === 0) {
+        return "Cannot calculate percentage with 0 as the num2";
+    } else {
+        return (num1 / num2) * 100;
+    }
+};
 
 
 // Event listener for the calculate button
